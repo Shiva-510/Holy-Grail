@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    menu{
+        font-style: italic;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        color: blue;
+       
+      }
+      aside{
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 4;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        color: blue;
+       
+    }
+  }
+  
+  body > *,
+  .middle > * {
+    border: 3px solid black;
+    background-color: beige;
+    main{
+        background-color: aliceblue;
+        padding: 5px;
+    }
+  }
+  
+  .middle {
+    display: flex;
+    flex: 1;
+  }
+  
+  nav,
+  aside {
+    flex: 1;
+  }
+  
+  main {
+    flex: 3;
+  }
+  
+  header{
+    margin: 4px;
+    grid-column: 1 / -1;
+    padding: 1rem 1rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: bold; 
+    text-align: center;
+    background-color: beige;
+  }
+  
+  footer {
+    margin: 4px;
+    grid-column: 1 / -1;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  
+  header,
+  footer {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
